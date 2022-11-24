@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Задача</title>
+</head>
+
+<body>
+    <button onclick="multiply()">Умножи</button>
+    <p id = "num"></p>
+    <script>
+        function multiply(){
+            let number = prompt("Въведи число");
+
+            return document.getElementById("num").innerHTML = "Умножението на: " + number + " * " + number + " е: " + number * number;
+        }
+    </script>
+</body>
+
+</html>
