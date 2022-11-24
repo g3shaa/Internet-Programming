@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function getOption() {
+            var obj = document.getElementById("gamesSelect");
+            document.getElementById("games").innerHTML =
+                "Твоята любима игра е: " + obj.options[obj.selectedIndex].text ;
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        Избери опция:
+        <select id="gamesSelect">
+            <option>Minecraft</option>
+            <option>GTA San Andreas</option>
+            <option>World of Warcraft</option>
+            <option>Roblox</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="getOption()" value="Готово">
+    </form>
+
+    <p class = "games" id="games"></p>
+    <style>
+        .games {
+            color: rgb(5, 155, 155);
+        }
+        
+    </style>
+</body>
+
+</html>
