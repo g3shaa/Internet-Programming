@@ -5,4 +5,4 @@ function student() {
 
 var student = new student();
 student.display();
-document.getElementById("demo").innerHTML="My name is  " + student.name;
+document.getElementById("test").innerHTML="My name is  " + student.name;
