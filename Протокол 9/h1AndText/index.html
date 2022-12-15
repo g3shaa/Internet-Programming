@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1 and Text</title>
+</head>
+<body>
+    <script>
+        window.onload = function createHeadingOne(){
+            //създаване на х1
+            const h1 = document.createElement("H1");
+            //съдържание на х1
+            const textNode = document.createTextNode("Hello, guys!")
+            //прикрепяне на текста към заглавието
+            h1.appendChild(textNode);
+            //извеждане на х1
+            document.body.appendChild(h1);
+        }
+    </script>
+</body>
+</html>
